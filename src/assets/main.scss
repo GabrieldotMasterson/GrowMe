@@ -1,0 +1,135 @@
+@import './base.scss';
+
+button {
+  all: unset;
+  cursor: pointer;
+}
+
+
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-weight: normal;
+  font-family: 'Inter'
+}
+
+a,
+.green {
+  text-decoration: none;
+  color: hsla(160, 100%, 37%, 1);
+  transition: 0.4s;
+  padding: 3px;
+}
+
+.effect-nav {
+  z-index: -2;
+position: absolute;
+left: 0px;
+top: 0px;
+width: 100vw;
+height: 40vh;
+background-image: linear-gradient(to bottom, rgba(100, 100, 100, 0.116), rgba(150, 150, 150, 0));;
+
+}
+
+.nav{
+  display: flex;
+  justify-content: space-between;  
+}
+
+.nav-logo{
+
+  width: 2vw;
+  height: auto;
+}
+
+.nav-left{
+  display: flex;
+  gap: 2rem;
+}
+
+.main-home{
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  
+}
+
+.infomation-sidebar {
+  margin-top: 3rem;
+  width: 17vw;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+
+.box-content{
+  width: 100%;
+  border-style: solid;
+  border-color: var(--color-border);
+  display: flex;
+  
+  padding: 1rem;
+  border-radius: 20px;
+  border-width: 0.1px;
+  box-shadow: 1px 1px 5px 1px rgb(0 0 255 / 0.2);
+
+}
+
+.perfil{
+  flex-flow: column wrap;
+  align-items: center;
+}
+
+.new-network-box{
+  margin-top: 1rem;
+  flex-flow: column wrap;
+  align-items: center;
+  gap: 1rem;
+}
+
+.new-contact{
+  display: flex;
+  width: 100%;
+  border-bottom: 0.1px var(--color-border) solid;
+  padding-bottom: 0.5rem;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  
+
+  &-img {
+    border-radius: 100%;
+    width: 2vw;
+    height: auto;
+  }
+
+  &-name {
+    font-size: 1rem;
+  }
+  
+}
+
+.user-image{
+  width: 10vw;
+  border-radius: 100%;
+}
+
+.user-information{
+  font-size: 1rem;
+}
+
+.user-school{
+  font-weight:500;
+}
+
+.main-box{
+  margin-top: 3rem;
+  margin-left: 1.5rem;
+  width: 50vw;
+}
+
+.projects{
+  margin-left: 1rem;
+  height: 100vh;
+}
